@@ -37,7 +37,7 @@ const getWeather = () => {
                 </div>`
             })
             .catch(() => {
-                result.innerHTML = `<h3 class="mt-6 uppercase font-bold tracking-widest">maaf, yang anda cari7 tidak ditemukan 😢</h3>`
+                result.innerHTML = `<h3 class="mt-6 uppercase font-bold tracking-widest">maaf, yang anda cari tidak ditemukan 😢</h3>`
             })
 
     }
