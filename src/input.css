@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Poppins';
+}
+
+:root{
+    --white: #fff;
+    --off-white: #e5e5e5;
+    --trans-white-1: rgba(255, 255, 255, .25);
+    --trans-white-2: rgba(255, 255, 255, .1);
+    --blue-1: #62b8f5;
+    --blue-2: #4475ef;
+    --shadow: rgba(3, 46, 87, .5);
+}
+
+body {
+    background: linear-gradient(135deg, var(--blue-1), var(--blue-2));
+}
+
+.cont{
+    box-shadow: 0 1.8em 4em var(--shadow);
+}
+
+.shape{
+    @apply absolute bg-trans-white-1 backdrop-blur-[1.2em] border-2 border-trans-white-2 rounded-full;
+}
+
+#result{
+    color: var(--white);
+}

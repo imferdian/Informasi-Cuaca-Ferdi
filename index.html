@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/style.css">
+    <title>Informasi Cuaca</title>
+</head>
+<body class="h-screen overflow-hidden">
+    <div class="text-base w-[90vw] max-w-[28em] absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+        <div class="shape h-36 w-36 -right-16 top-10 sm:h-[13.5em] sm:w-[13.5em] sm:-right-24 sm:top-[1.8em]"></div>
+        <div class="shape h-28 w-28 -left-8 -bottom-[2em] sm:h-[11em] sm:w-[11em] sm:-bottom-[3.7em] sm:-left-[2.5em]"></div>
+
+        <div class="cont w-full bg-trans-white-2 backdrop-blur-[10px] py-[3em] px-[1.8em] border-2 border-trans-white-2 rounded-lg text-center ">
+            <div class="search-con text-base grid gap-5 grid-cols-[70%_3fr]">
+                <input type="text" placeholder="Masukan nama kota..." id="city" class=" text-lg p-2 sm:p-3 bg-transparent border-b-2 border-trans-white-1 text-white placeholder:font-normal placeholder:text-off-white font-semibold focus:border-white focus:outline-none ">
+                <button id="search-btn" class="bg-white text-[1em] text-blue-2 rounded-md font-semibold">Cari</button>
+            </div>
+            <div id="result" class="">
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
