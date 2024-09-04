@@ -566,8 +566,12 @@ video {
   left: -2rem;
 }
 
-.-right-16 {
-  right: -4rem;
+.-right-\[1\.20rem\] {
+  right: -1.20rem;
+}
+
+.-top-14 {
+  top: -3.5rem;
 }
 
 .left-1\/2 {
@@ -578,23 +582,9 @@ video {
   top: 50%;
 }
 
-.top-10 {
-  top: 2.5rem;
-}
-
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
 }
 
 .my-6 {
@@ -608,10 +598,6 @@ video {
 
 .mt-3 {
   margin-top: 0.75rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
 }
 
 .mt-6 {
@@ -684,40 +670,16 @@ video {
   gap: 1.25rem;
 }
 
-.space-y-5 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
-}
-
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
-.space-x-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-5 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .divide-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-x-reverse: 0;
   border-right-width: calc(2px * var(--tw-divide-x-reverse));
   border-left-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));
-}
-
-.divide-x > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-x-reverse: 0;
-  border-right-width: calc(1px * var(--tw-divide-x-reverse));
-  border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
 }
 
 .divide-trans-white-1 > :not([hidden]) ~ :not([hidden]) {
@@ -769,19 +731,14 @@ video {
   padding: 0.5rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-\[1\.8em\] {
   padding-left: 1.8em;
   padding-right: 1.8em;
-}
-
-.py-\[3em\] {
-  padding-top: 3em;
-  padding-bottom: 3em;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .py-2 {
@@ -789,9 +746,9 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.py-\[3em\] {
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 .text-center {
@@ -801,6 +758,11 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .text-\[1em\] {
@@ -822,14 +784,12 @@ video {
   line-height: 1.25rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.font-bold {
+  font-weight: 700;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
+.font-light {
+  font-weight: 300;
 }
 
 .font-medium {
@@ -840,24 +800,8 @@ video {
   font-weight: 600;
 }
 
-.font-light {
-  font-weight: 300;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
 .uppercase {
   text-transform: uppercase;
-}
-
-.leading-3 {
-  line-height: .75rem;
-}
-
-.tracking-wide {
-  letter-spacing: 0.025em;
 }
 
 .tracking-wider {
@@ -925,16 +869,6 @@ body {
 
 #result{
   color: var(--white);
-}
-
-.placeholder\:text-base::-moz-placeholder {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.placeholder\:text-base::placeholder {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .placeholder\:font-normal::-moz-placeholder {
